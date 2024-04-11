@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ChatMessage from './ChatMessage'
 import { useDispatch, useSelector } from 'react-redux';
-import { storeLiveChats } from '../utills/liveChatSlice';
+import { storeLiveChats } from '../utills/redux_store/slices/liveChatSlice';
 
 const LiveChat = () => {
     const dispatch = useDispatch();

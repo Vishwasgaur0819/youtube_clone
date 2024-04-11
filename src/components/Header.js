@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { logo, searchApi } from '../utills/constant'
-import { toggleMenu } from '../utills/appSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import { cacheSearchResults } from '../utills/searchSlice';
+import { cacheSearchResults } from '../utills/redux_store/slices/searchSlice';
+import { toggleMenu } from '../utills/redux_store/slices/appSlice';
 
 const Header = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -43,7 +43,7 @@ const Header = () => {
         <div className='grid grid-flow-col p-5 shadow-md' >
             <div className='flex col-span-1' >
                 <img onClick={() => toggleSideBar()} className='h-8 cursor-pointer' alt='menu' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/207px-Hamburger_icon.svg.png' />
-                <img className='h-20 cursor-pointer' alt='logo' src={logo} />
+                <img className='h-20 cursor-pointer' alt='logo' src={'logo'} />
             </div>
             <div className='col-span-10' >
                 <div className='w-1/2' >

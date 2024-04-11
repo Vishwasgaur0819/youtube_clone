@@ -9,4 +9,4 @@ const videosListApi = `https://www.googleapis.com/youtube/v3/videos?part=snippet
 // const searchApi = 'http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=';
 const searchApi = 'http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=';
 
-export { logo, videosListApi, searchApi };
+export { logo, videosListApi, searchApi, apiKey };

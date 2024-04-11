@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { closeMenu } from '../utills/appSlice';
 import { useSearchParams } from 'react-router-dom';
 import CommentsContainer from './CommentsContainer';
 import LiveChat from './LiveChat';
+import { closeMenu } from '../utills/redux_store/slices/appSlice';
 
 
 const WatchPage = () => {
