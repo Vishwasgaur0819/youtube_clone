@@ -8,9 +8,7 @@ const LiveChat = () => {
     const chatMessages = useSelector(store => store.livechat.messages);
     const [message, setMessage] = useState('');
     useEffect(() => {
-
         const i = setInterval(() => {
-            // console.log('polling is on')
             dispatch(storeLiveChats({
                 name: 'Vishwas1',
                 message: 'This is mission react is going on'

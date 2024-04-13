@@ -5,17 +5,6 @@ const getVideosSlice = createApi({
     reducerPath: 'videos',
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://www.googleapis.com/youtube/v3/',
-        // prepareHeaders: (headers, { getState }) => {
-        //     const token = getState();
-        //     console.log("getSTate", token)
-        //     // If we have a token set in state, let's assume that we should be passing it.
-        //     if (token) {
-        //         headers.set('authorization', `Bearer ${token}`)
-        //         headers.set('apptoken', ``)
-        //     }
-
-        //     return headers
-        // },
     }),
     endpoints: (builder) => ({
         getVideos: builder.query({
