@@ -10,7 +10,7 @@ const LiveChat = () => {
     useEffect(() => {
 
         const i = setInterval(() => {
-            console.log('polling is on')
+            // console.log('polling is on')
             dispatch(storeLiveChats({
                 name: 'Vishwas1',
                 message: 'This is mission react is going on'

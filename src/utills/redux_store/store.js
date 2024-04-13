@@ -3,7 +3,6 @@ import { setupListeners } from '@reduxjs/toolkit/query/react';
 import rootReducer, { listOfReducersToBePersisted } from './rootReducer';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import logger from 'redux-logger'
 import { videoMiddleware } from './slices/getVideosSlice';
 // import getVideosSlice from './slices/getVideosSlice';
 

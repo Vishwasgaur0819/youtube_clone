@@ -9,7 +9,7 @@ const Header = () => {
     const [suggestions, setSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
     const searchResultsObj = useSelector(store => store.search);
-    console.log("searchResultsObj", searchResultsObj)
+
     const dispatch = useDispatch();
     const toggleSideBar = () => {
         dispatch(toggleMenu())
@@ -24,7 +24,7 @@ const Header = () => {
             const res = await fetch(searchApi + searchQuery);
             const textData = await res.text();
             let json = JSON.parse(textData)?.[1]
-            console.log("suggestion data", json);
+            // console.log("suggestion data", json);
             setSuggestions(json)
 
             dispatch(cacheSearchResults([searchQuery, json]));
