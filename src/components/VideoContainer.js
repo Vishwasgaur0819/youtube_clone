@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { apiKey } from '../utills/constant'
 import VideoCard from './VideoCard';
 import { Link } from 'react-router-dom';
