@@ -46,7 +46,7 @@ const Header = () => {
                 <img className='h-20 cursor-pointer' alt='logo' src={'logo'} />
             </div>
             <div className='col-span-10' >
-                <div className='w-1/2' >
+                <div className='w-3/5' >
                     <div className='w-full'>
                         <input onFocus={() => setShowSuggestions(true)} onBlur={() => setShowSuggestions(false)} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className='px-5 w-11/12 h-10 border border-gray-400 rounded-l-full ph-2' type='text' />
                         <button className='border border-gray-400 rounded-r-full h-10 px-5 py-2 bg-gray-200 w-1/12' >🔍 </button>
