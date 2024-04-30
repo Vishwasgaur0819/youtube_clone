@@ -18,7 +18,6 @@ const WatchPage = () => {
 
     useEffect(() => {
         const handleBackButton = () => {
-            alert('hi')
             // Custom logic for handling the back button
             navigate('/'); // Navigate to a specific route
         };
