@@ -10,8 +10,8 @@ const LiveChat = () => {
     useEffect(() => {
         const i = setInterval(() => {
             dispatch(storeLiveChats({
-                name: 'Vishwas1',
-                message: 'This is mission react is going on'
+                name: 'Test User',
+                message: 'Test comment'
             }))
         }, 2000);
         return () => {

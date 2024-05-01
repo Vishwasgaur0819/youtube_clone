@@ -1,12 +1,18 @@
 import React, { useRef, useState } from 'react';
 import Header from './Header';
-import { checkValidateData } from '../utills/validate';
+// import { checkValidateData } from '../utills/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../utills/firebase';
+import { useDispatch } from 'react-redux';
+import { checkValidateData } from '../utills/validate';
 
 // import { useDispatch } from 'react-redux';
 
 const Login = () => {
+    const dispatch = useDispatch();
+    const [formData, setFormData] = useState({});
+    const [isSignInForm, setIsSignInForm] = useState(true);
+    const [errorMessage, setErrorMessage] = useState(null);
     const email = useRef(null);
     const password = useRef(null);
     const name = useRef(null);
@@ -72,10 +78,9 @@ const Login = () => {
         }
     }
 
-
     return (
         <div className="relative">
-            <Header />
+            {/* <Header /> */}
             <div className="m-auto relative">
                 {/* <img
                     className="h-full w-full shadow-lg"
@@ -98,8 +103,8 @@ const Login = () => {
                                 type="text"
                                 placeholder="Email address"
                                 className="w-full h-12 px-3 border mt-5 border-gray-400 bg-transparent rounded-md text-white"
-                                onChange={(e) => handleSetFormData('email', e)}
-                                value={formData?.['email'] || ''}
+                                // onChange={(e) => handleSetFormData('email', e)}
+                                value={email?.current?.value}
                             />
                             <input
                                 ref={password}

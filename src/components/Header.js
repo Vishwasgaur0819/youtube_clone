@@ -40,7 +40,7 @@ const Header = () => {
 
 
     return (
-        <div className='grid grid-flow-col p-5 shadow-md' >
+        <div className='grid grid-flow-col p-5 shadow-md'>
             <div className='flex col-span-1' >
                 <img onClick={() => toggleSideBar()} className='h-8 cursor-pointer' alt='menu' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/207px-Hamburger_icon.svg.png' />
                 <img className='h-20 cursor-pointer' alt='logo' src={'logo'} />

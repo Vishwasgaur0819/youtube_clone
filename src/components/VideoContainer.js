@@ -14,7 +14,7 @@ const VideoContainer = () => {
     }
     return (
         <div className='flex' >
-            {data?.items?.map((video) => <Link key={video.id} to={'/watch?v=' + video.id} ><VideoCard info={video} /></Link>)}
+            {data?.items?.map((video) => <Link key={video.id} to={'/dashboard/watch?v=' + video.id} ><VideoCard info={video} /></Link>)}
         </div>
     )
 

@@ -34,22 +34,21 @@ const WatchPage = () => {
     return (
         <div className='flex flex-col w-full' >
             <div className='px-2 flex'>
-                <div>
-                    {/* <iframe
-                        width="1100"
+                <div className=' w-9/12'>
+                    <iframe
+                        width="100%"
                         height="600"
                         src={"https://www.youtube.com/embed/" + searchParams.get('v')}
                         title="Yimmy Yimmy (Official Video) Jacqueline Fernandez | Tayc, Shreya Ghoshal | | New Song 2024 | MDN"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
-
-                    </iframe> */}
+                    </iframe>
                 </div>
-                <div className='border rounded-lg overflow-y-scroll w-full' >
-                    {/* <LiveChat /> */}
+                <div className='border rounded-lg overflow-y-scroll w-1/4' >
+                    <LiveChat />
                 </div>
             </div>
-            {/* <CommentsContainer /> */}
+            <CommentsContainer />
         </div>
 
     )
